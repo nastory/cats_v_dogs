@@ -22,7 +22,7 @@ def cat_dog_classifier(image_file):
     img = img.astype('float32')
     img = img * (1/255)
     
-    model = load_model('model_95/cats_v_dogs_95.h5')
+    model = load_model('cats_v_dogs_95.h5')
     
     result = model.predict(img)
     
@@ -35,6 +35,6 @@ def cat_dog_classifier(image_file):
         print('\nIT\'S A GODDAMN CAT')
 
 
-image_file = '/Users/nastory/Desktop/images.jpg'
+image_file = '/Users/nastory/Desktop/download.jpg'
 
 cat_dog_classifier(image_file)

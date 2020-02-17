@@ -30,11 +30,11 @@ def cat_dog_classifier(image_file):
     plt.imshow(display_img)
     
     if result[0] > .5:
-        print('\nIT\'S A GOOD BOY')
+        print('\nIT\'S A DOG')
     else:
-        print('\nIT\'S A GODDAMN CAT')
+        print('\nIT\'S A CAT')
 
 
-image_file = '/Users/nastory/Desktop/download.jpg'
+image_file = '~/Desktop/download.jpg'
 
 cat_dog_classifier(image_file)
